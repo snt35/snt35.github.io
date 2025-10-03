@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<!-- je mets volontairement 2 façons de colorer le texte (global et pour la page) pour voir que cela ne pose pas de problème mais que c'est la deuxième qui "écrase" la première donc l'ordre est essentiel -->
+	    <link rel="stylesheet" href="stylesheet.css" />
+		<!-- si je voulais colorer le texte de cette page en jaune, je pourrai faire ceci :
+		<style>
+            p
+            {
+                color: yellow;
+            }
+        </style>
+        mais je ne le fais pas -->
+	<title> 1.Internet </title>
+    </head>
+    <body>
+		<h1> Internet </h1>
+	    	<p class="centre"><img src="globe_internet.jpg" width="100" height="100" alt="globe terrestre"></p>
+	    	<p style="color: green;"> Voici un extrait du programme de SNT (B.O.):</p>
+	    	<p style="color: green;">
+	    	<q> Souple et universel, internet est devenu le moyen de communication principal entre les hommes et avec les machines.
+	       	 Internet est né en <mark>1983</mark>. Il est défini par le protocole IP (Internet Protocol), ensemble de normes qui permettent d'identifier et de nommer de façon uniforme tous les ordinateurs ou objets qui lui sont connectés. IP est accompagné de protocoles de transmission pour l'information par paquets, le principal étant TCP/IP. Internet s'appuie sur une grande variété de réseaux physiques où IP est implémenté. Il uniformise l'accès à tous les ordinateurs, les téléphones et les objets connectés.</q> </p>
+	       	<p> Il y a 7 couches à considérer :</p>
+	       	<ol start="7" reversed> <!-- j'ai créé une liste non ordonnée car sinon elle commençait, en haut, par 1 -->
+	       		<li> application (Http) </li>
+	       		<li> présentation (Html, Ascii) </li>
+	       		<li> session </li>
+	       		<li> transport (TCP, UDP, RTI) </li>
+	       		<li> réseau (IP) </li>
+	       		<li> liaison (Ethernet, Wifi) </li>
+	       		<li> physique (ADSL, Bluetooth, satellite...) </li>
+	       	</ol>
+	       	<p> Parler d'Internet, ce n'est pas parler d'une science, mais plutôt de techno-science (d'"artisanat" selon Louis Pouzin, pionnier d'Internet) où il est question de théorie des graphes, théorie de l'information ("Théorie mathématique de l'information" de Shannon en 1948), traitement du signal, systèmes distribués, cryptographie, métrologie, statistiques.
+	       		<br> Au départ, il n'y a que 4 noeuds (novembre 1969) : liaisons entre les universités américaines d'UCLA, de Stanford, de Berckley et de Salt Lake City. C'est le système "Arpanet". La France n'est pas en reste avec Cyclades créé dès 1971.
+	       		<br> Le premier message transmis fut : "LO" le 29/10/1969 (l'objectif était d'envoyer un long texte dont le mot "login" mais seuls les deux premières lettres furent envoyées : taux de paquets reçus de 1/20 000 !). </p>
+	       	<p> Un livre référence : "Réseaux" d'Andrew Tanenbaum </p>
+	       	<p> L'expression, qui tombe en désuétude, "surfer sur internet" vient de Mark Mc Cahill en 1992, un pionnier d'Internet.</p>
+	    <h2 class="centre"> <a href="page2.html" title="thème 2" >le Web  </a></h2> 	
+	    <h2 class="centre"> <a href="index.html" title="les 7 thèmes" >retour au menu </a></h2>
+	<footer>
+	    <h3 class="centre"> <a href="mailto:sylvain.rouyer@ac-rennes.fr" title="me contacter" >contact</a></h3>
+	</footer>
+    </body>
+</html>
