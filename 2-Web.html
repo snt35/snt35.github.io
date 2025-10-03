@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+        <title> 2. le Web </title>
+      <link rel="stylesheet" href="/style.css" />
+    </head>
+<body>
+      <div> <img src="logo_SNT.png" alt="SNT" width="8%" height="15%" style="position:fixed;top:20px;right:20px;"></div>
+<h1> Le Web </h1>
+                <p class="centre"><img src="globe_web.jpg"  width="90" height="62" alt="globe web"></p>
+      <p> Le web (toile ou réseau) désigne un système donnant accès à un ensemble de données (page, image, son, vidéos) reliées par des liens <mark>hypertextes</mark> et accessibles sur le réseau <a href="page1.html" title="thème 1.Internet">Internet.</a> C'est un réseau documentaire.</p>
+  <p> Le Web n'est pas Internet, mais c'est un service rendu par <a href="1-Internet.html">Internet</a>.</p>
+<h2>Repères historiques (extrait du B.O.)</h2>
+        <ul>
+          <li>1965: invention et programmation du concept d'<span class="particulier">hypertexte </span>par Ted Nelson</li>
+          <li>1989: naissance du WEB au CERN par <span class="particulier">Tim Berners Lee</span></li> <!-- c'est LA date à retenir donc mise en valeur -->
+          <li>1993: mise dans le domaine public, disponibilité du premier navigateur Mosaic</li>
+          <li>1995: mise à disposition de technologies pour le développement de site Web interactif (langage JavaScript) et dynamique (langage PHP)</li>
+          <li>2001: standardisation des pages grâce au DOM(Document Object Model)</li>
+          <li>2010: mise à disposition de technologies pour le développement d'applications sur mobiles</li>
+        </ul>
+<h2>Généralités</h2>
+      <p> Voici un lien utile pour apprendre à créer un lien hypertexte : <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604646-creez-des-liens" target="_blank" title="créer hypertexte">OpenClassroom</a> </p> 
+  <p> C'est à Tim Berners-Lee qu'on doit également le protocole HTTP et le langage <a href="#ancre1">HTML</a>.
+        Le Web est gouverné par le <a href="https://www.w3.org/">W3C</a> (World Wide Web Consortium).</p>
+      <p>
+         Enfin, on parle de différents Web.
+        
+        <a href="#" onclick="voirsuite();" id="voirsuite">Lire la suite...</a>
+         <div id="suite">
+           En effet, il y a celui qui est visible (surface Web), celui qui est caché ou peu visible (deep Web) et celui qui est secret voire illégal (dark Web).
+           mot caché : Painlevé.
+           <a href="#" onclick="replier();" id="replier">Replier...</a>
+         </div>
+       <script type="text/javascript" src="script.js"></script>
+      
+      <a href="https://commons.wikimedia.org/wiki/File:Deepweb_graphical_representation.svg" target="_blank">Iceberg du Web</a> 
+      </p>
+      <p>
+        Il y a aussi différentes natures du Web. Initialement, le Web est documentaire (Web 1.0), mais il est aussi un espace participatif (Web 2.0)
+        via les réseaux sociaux notamment. Il est aussi qualifié de sémantique (Web 3.0) où les ressources sont structurées et traitables par des
+        algorithmes. Enfin, on parle aussi de Web 4.0 avec les objets connectés.
+      </p>
+<h2>Modèle client/serveur</h2>      
+      <p> Le Web est basé sur le modèle Client/Serveur. Un client (en fait, très souvent, un navigateur, parfois un robot) envoie une requête à un serveur (hébergeur d'ordinateurs, de disques durs).
+        Ce dernier envoie des fichiers que le navigateur va alors interpréter. </p>
+<h2>URL</h2>
+      <p> Les documents sont localisés grâce à une URL (Uniform  Resource Locator) et sont accessibles grâce au protocole HTTP (Hypertext Transfer Protocol) ou HTTPS, version plus sécurisée.
+        Il suffit de saisir une URL dans la barre d’adresse de notre navigateur pour accéder au document.  </p>
+      <p> Les URL les plus fréquentes sont de la forme suivante : </p>
+  <p> <span class="exemple">Exemple 1 : https://sous-domaine.<span class="partie">domaine.tld</span>/dossier/fichier.html </span></p>
+  <p> <span class="exemple">Exemple 2 : https://snt2de.<span class="partie">glitch.me</span>/2-Web.html </span></p>
+  <p> <span class="exemple">Exemple 3 : https://<span class="partie">lewebpedagogique.com</span>/rouy/3eme/ </span></p>
+      <p> Le début (https) est le protocole utilisé pour récupérer le document, suivi de « : » et « // ».  </p>
+  <p> Ensuite, est indiqué le <span class="partie">nom de domaine</span> constitué (de droite à gauche) par : </p>
+      <ul>
+        <li>le « tld » qui désigne le TLD = top-level domain, nom du domaine de 1er niveau. On parle aussi d’extension du nom de domaine. Il en existe environ 2 000 (net, org, fr, bzh, …).
+          <span class="exemple">Dans l’exemple 2, il s’agit de « me » et dans l’exemple 3 « com ».</span></li>
+        <li>le domaine de second niveau (SLD = second level domain). <span class="exemple">Dans l’exemple 2, il s’agit de « glitch » et dans l’exemple 3 « lewebpedagogique ».</span></li>
+        <li>Un sous-domaine peut précéder le nom de domaine (on parle aussi de préfixe).<span class="exemple">Dans l’exemple 2, il s’agit de « snt2de » et le plus souvent c'est « www » (world wide web).</span></li>
+      </ul>
+<p>
+  Supposons que nous ayons atteint cette adresse IP. La suite de l’URL nous permet alors de rentrer dans le serveur qui héberge la ressource voulue.
+  Celle-ci peut être dans un dossier (notion qui n’est désormais plus forcément "physique"). <span class="exemple">Dans l’exemple 3, il s’agit du dossier "rouy".</span> </p>
+<p> Ce dossier peut contenir un sous-dossier, etc. et on finit par atteindre la ressource voulue. 
+  <span class="exemple">Dans l’exemple 2, on atteint le fichier « 2-Web.html ».</span></p>
+<p> La fin de l’adresse URL peut contenir une ancre #endroit_dans_le_document.
+Ainsi, la page ne s’affiche pas au début mais à l’endroit précis que l’on souhaite dans la page.
+  </p>
+<h2>Requête HTTP </h2>
+      <p>Un article de <a href="https://openclassrooms.com/fr/courses/1118811-les-requetes-http" target="_blank" title="requête http"> Openclassroom</a> détaille ce qu'est une requête http.</p>
+<h2 id="ancre1">Langages HTML et CSS</h2>
+      <p>
+        Plusieurs langages permettent de créer des pages Web :</p>
+        <ul>
+          <li>HTML (Hypertext Markup Language) : pour décrire le contenu du document</li>
+          C'est un langage de description : titres, paragraphes, listes, tableaux,... C'est un langage écrit avec des balises.
+          <ul><li>Par exemple, un paragraphe s'écrira entre les deux balises &lt;p&gt; et &lt;/p&gt;.</li> 
+            <li>Quant à un lien hypertexte, il est créé ainsi :
+              <br> &lt;a href="https://www.lewebpedagogique.com/rouy"&gt;mon site de math&lt;/a&gt; ce qui donnera <a href="https://lewebpedagogique.com/rouy">mon site de math</a>
+              L’URL indiquée peut être absolue (comme dans cet exemple) ou relative :
+                <ul>
+                  <li>&lt;a href="page2.html"&gt; si la page2 est dans le même dossier que la page,</li>
+                  <li>&lt;a href="contenu/page2.html"&gt; si la page2 est dans un sous-dossier "contenu",</li>
+                  <li>&lt;a href="../page2.html"&gt; si la page2 est dans le dossier parent,</li>
+                  <li>&lt;a href="#ancre2"&gt; si le lien est interne à la page. Dans ce cas, à l’endroit souhaité, 
+                    il faut rajouter l’attribut id à une balise (exemple &lt;h1 id="ancre2"&gt;).</li>
+              </ul>
+            </li>
+          </ul>
+          <br> Un clic droit  sur une page Web puis "code source de la page" permet de voir le code html de la page.
+          <li>CSS (Cascading Style Sheet): pour mettre en forme le document</li>
+          Ainsi, si on veut que les paragraphes soient écrits en vert, on écrira dans le fichier CSS :
+          <br> p
+          <br> {
+          <br> color:green;
+          <br> }
+          <br> Si on veut voir les pages Web sans leur mise en forme par les CSS, il suffit d'ouvrir l'outil de développement (via la touche F12), puis Editeur de style (en bas de l'écran) puis on désactive les feuilles de style (en bas à gauche).
+          <li>Javascript : le Javascript permet d’animer, de sécuriser, de traiter des données (cookies), côté client.</li>
+          <li>PHP : un autre langage, comme Javascript, mais côté serveur (PHP Hypertext Preprocessor).</li>
+          <li>SQL : SQL (Structured Query Language) est un langage de requêtage de données.</li>
+        </ul>
+      <p id="encadrement"> <!--ajouter cet attribut permet d'établir une règle css : cf fichier style.css. Cet attribut est à usage unique dans la page -->
+        Vous pouvez vous entraîner à écrire du <span>HTML</span><!-- cf style.css --> et des règles de <span>CSS</span> à partir de cette <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default" title="W3school" target="_blank">page d'entraînement</a>.</p>
+<h2>Navigateurs et sécurité</h2>      
+      <p>
+         Actuellement, le marché des navigateurs est très largement dominé par Chrome (de Google), devant Safari (d'Apple). <a href="http://gs.statcounter.com/browser-market-share" title="navigateurs" target="_blank">Statistiques</a>
+      </p>
+      <p>
+      La chaîne Arte propose une <a href="https://donottrack-doc.com/fr/episodes/" target="_blank" title="Do not track?">série de 7 épisodes sur le trackage</a> sur le Web.
+      </p>
+      <p>
+      En plus des trackers, une autre façon d'être pisté se fait via l'empreinte de notre navigateur. La vôtre est-elle unique ? On peut en avoir une idée grâce au site <a href="https://amiunique.org" title="Am I unique ?" target="_blank">Am I Unique</a>
+</p>
+<h2>Moteurs de recherche</h2>
+      <p>Google écrase toute la concurrence. <a href="http://gs.statcounter.com/search-engine-market-share" title="moteurs de recherche" target="_blank">Statistiques</a>
+      </p>
+      <p>Cependant, d'autres moteurs de recherche existent avec d'autres valeurs : par exemple, le moteur de recherche français <a href="https://about.qwant.com/fr/" title="valeurs" target="_blank">Qwant</a>.</p>
+      <p>
+   Lorsqu'on cherche une information sur le Web, soit on connaît par c&oelig;ur l'adresse d'un site, soit on utilise un annuaire (qui regroupe des sites Web), soit on va sur un moteur de recherche. Autant dire que c'est cette dernière solution qui est largement utilisée.
+      </p>   
+      <p>En saisissant des mots clés, le moteur de recherche nous retourne une liste de pages Web censée contenir ces mots-clés.
+        Comment ? Grâce, au départ, à des robots (spiders ou crawlers), qui récupèrent l'URL d'une page, son code html, sa taille, sa date de dernière modification, ...
+        Le plus célèbre de ces logiciels robots est <a href="https://www.webrankinfo.com/google/googlebot.htm" target="_blank" title="présentation">Googlebot</a> 
+        et ce qui a fait le succès de Google : son algorithme <a href="https://fr.wikipedia.org/wiki/PageRank" target="_blank" title="PageRank">PageRank</a>.</p>
+  <h3> Du côté utilisateur : effectuer une recherche</h3>
+      <p>Un utilisateur peut effectuer une recherche simple, avancée ou spécifique.</p>
+      <ul>
+        <li> Recherche simple </li>
+          <p> Inutile d'écrire les mots "le", "la", "du", "avec". On les appelle des mots vides. Inutile également d'ajouter "et" entre deux mots ou de mettre une majuscule. </p>
+          <p> En revanche, si on ne ne veut pas d'un mot, il suffit de le faire précéder du signe moins (-). </p>
+          <p> Enfin, si on veut une expression précise, on la mettra entre guillemets. <a href="https://www.commentcamarche.net/faq/9383-comment-utiliser-efficacement-les-moteurs-de-recherche" target="_blank" title="détails">Conseils pour une recherche</a> </p>
+        <li> Recherche avancée</li>
+          <p> Le moteur de recherche Google propose d'<a href="https://support.google.com/websearch/answer/35890?hl=fr" target="_blank" title="support">affiner</a> les résultats grâce à des filtres. Exemple de <a href="https://www.google.fr/advanced_search" target="_blank" title="requête">recherche avancée</a>.
+          </p>
+      </ul>
+  <h3>Du côté webmaster (créateur et administrateur de site) : être bien positionné</h3>
+    <p>
+      Pour qu'un site soit connu des moteurs de recherche, il doit être référencé : il doit signaler son existence.
+      Mais qui va chercher au-delà des deux premières pages proposées par un moteur de recherche ?
+      Être référencé, c'est bien, être bien positionné, c'est beaucoup mieux.
+      Pour cela, le choix de mots clés dans le titre de la page, dans les titres des paragraphes, dans le code source de la page, est essentiel. 
+      Mais d'<a href="https://fr.wikipedia.org/wiki/Optimisation_pour_les_moteurs_de_recherche" target="_blank" title="bon référencement">autres critères</a> existent. 
+    </p>
+<h2>Notions juridiques</h2>
+    <ul>
+      <li>licence</li>
+      <li>droit d'auteur</li>
+      <li>droit d'usage</li>
+      <li>valeur d'un bien</li>
+</ul>
+<h2 class="centre"> <a href="3-Sociaux.html" title="thème3" >les réseaux sociaux</a></h2>
+<h2 class="centre"> <a href="index.html" title="les 7 thèmes">retour au menu </a></h2>
+
+ <footer>    <h3 class="centre"> <a href="mailto:sylvain.rouyer@ac-rennes.fr" title="me contacter">contact</a></h3>
+ </footer>
+</body>
+</html>
