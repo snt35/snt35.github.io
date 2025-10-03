@@ -132,7 +132,7 @@
             Ces eNodeB diffusent régulièrement un signal appelé Voie balise ou beacon channel (ce qui indique l'existence du réseau notamment). Ces eNodeB sont ensuite reliées au réseau IP de l'opérateur, lui-même relié à des routeurs vers Internet.
           Plus précisément, le réseau Internet ne sait pas gérer la mobilité, a priori. En 4G, la solution retenue est de faire converger les paquets vers une porte d'entrée, un PGW : Packet Gate Way. Comme l'utilisateur peut changer de cellule, les données passent par un équipement intermédiaire : le SGW (Serving Gate Way).</p>
           <figure classe="centre">
-            <img src="architecture%204G.png" width="100%" height="100%" alt="architecture 4G" title="réseau 4G">
+            <img src="architecture_4G.png" width="100%" height="100%" alt="architecture 4G" title="réseau 4G">
             </figure>
           <p> Deux éléments sont centraux dans l'architecture d'un réseau 4G : le MME et le HSS. Ce dernier (Home Subscriber Server) est une base de données des abonnés. Lorsqu'un terminal se connecte à une eNodeB, celle-ci envoie une requête auprès du MME (Mobility Management Entity) pour l'autoriser à utiliser le réseau.
             Ce MME va alors consulter le HSS pour s'assurer de la présence de l'abonné dans ce HSS (un identifiant temporaire, le TMSI, est également attribué, pour une question de sécurité). Le MME assure également d'autres services de contrôle. Une adresse IP (cf paragraphe ci-dessous) est allouée lors de la mise sous tension du terminal (on parle d'"attachement"), via le chemin suivant : le MME envoie une requête au SGW qui transmet au PGW. Ce dernier retourne une adresse IP transmise successivement au SGW, puis au MME, au eNodeB et à l'UE.</p>
@@ -234,4 +234,5 @@
         </footer>
     </body>
 </html>
+
 
