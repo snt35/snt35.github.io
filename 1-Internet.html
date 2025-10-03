@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- je mets volontairement 2 façons de colorer le texte (global et pour la page) pour voir que cela ne pose pas de problème mais
+ que c'est la deuxième qui "écrase" la première donc l'ordre est essentiel -->
+            <link rel="stylesheet" href="/style.css" />
+                <!-- si je voulais colorer le texte de cette page en jaune, je pourrai faire ceci :
+                <style>
+            p
+            {
+                color: yellow;
+            }
+        </style>
+        mais je ne le fais pas -->
+        <title> 1.Internet </title>
+    </head>
+    <body>
+      <!--mise en position absolue du logo SNT en haut à droite (dimensions approximatives de l'image, à revoir) -->
+      <div> <img src="logo_SNT.png" alt="SNT" width="8%" height="15%" style="position:fixed;top:20px;right:20px;"></div>
+                <h1> Internet </h1>
+                <p class="centre"><img src="globe_internet.jpg" width="100" height="100" alt="globe terrestre"></p>
+                <p> Voici un extrait du programme de SNT (B.O.):</p>
+                <p>
+                <q> Souple et universel, internet est devenu le moyen de communication principal entre les hommes et avec les machines.
+                 Internet est né en <span class="particulier">1983</span>. Il est défini par le protocole IP (Internet Protocol), ensemble de normes qui permettent d'identifier et de nommer de façon uniforme tous les ordinateurs ou objets qui lui sont connectés. IP est accompagné de protocoles de transmission pour l'information par paquets, le principal étant TCP/IP. Internet s'appuie sur une grande variété de réseaux physiques où IP est implémenté. Il uniformise l'accès à tous les ordinateurs, les téléphones et les objets connectés.</q> </p>
+            <p> C'est le réseau des réseaux. <strong> Couches </strong>, <strong> protocoles </strong>, <strong> adressage </strong>, routage, DNS... 
+          <q> mais c'est aussi le <em> Web </em>? </q> <del> Oui</del>. Euh... <ins> non!</ins>. </p> 
+        <p> Parler d'Internet, ce n'est pas parler d'une science, mais plutôt de techno-science (d'"artisanat" selon Louis Pouzin, pionnier d'Internet) où il est question de théorie des graphes, théorie de l'information ("Théorie mathématique de l'information" de Shannon en 1948), traitement du signal, systèmes distribués, cryptographie, métrologie, statistiques.
+                        <br> Le premier message transmis fut : "LO" le 29/10/1969 (l'objectif était d'envoyer un long texte dont le mot "login" mais seuls les deux premières lettres furent envoyées : taux de paquets reçus de 1/20 000 !). </p>
+                <p> L'expression, qui tombe en désuétude, "surfer sur internet" vient de Mark Mc Cahill en 1992, un pionnier d'Internet.</p>
+  <h2> Réseaux de télécommunication </h2>
+    <p>
+       Un réseau est un ensemble de lignes ou d'éléments qui communiquent ou s'entrecroisent (dictionnaire Larousse). En informatique, c'est un ensemble d'équipements interconnectés par des télécommunications, celles-ci étant définies comme des communications à distance. 
+      Les réseaux peuvent être en bus, en anneau ou en étoile.
+      Différents noms sont attribués aux réseaux en fonction de leur étendue : bus (quelques centimètres), CAN (Controlled Area Network, dans une voiture par exemple), PAN (Personal, réseau d'un domicile), LAN (Local, réseau d'un lycée), MAN (Metropolitan, réseau d'une ville) et le WAN (Wide, réseau international). Et pour relier tous ces réseaux : l'INTERNETWORK, autrement dit Internet !</p>
+    <p>
+       Il y a plusieurs types d'acteurs dans les réseaux : les opérateurs (Orange, Free, SFR,...) et fournisseurs de service (GAFA,...), les usagers mais aussi les équipementiers (Samsung, Huawei,...), les instances de normalisation (UIT, IETF, les régulateurs (en France, l'ARCEP et le CSA) et les législateurs (l'Union Européenne avec la RGPD).
+    </p>
+    <p>
+      Des réseaux sont publics (mis en place par un opérateur télécom) : téléphonie fixe, téléphonie mobile et Internet. D'autres sont privés : le réseau Swift des banques, les réseaux VPN (Virtual Private Network), le réseau Rubis de la Gendarmerie... Leur gestion peut être centralisée ou décentralisée (réseaux pair-à-pair) ou organisée en groupes de travail. Le mode de transmission peut être une large bande ou une bande de base.
+      </p>
+      <p> L'accès aux réseaux est soit filaire, soit radio (ondes électromagnétiques).</p>
+      
+         
+       <figure class="centre">
+         <img src="RJ45.jpg" width="90" height="90" alt="RJ45" title="câble Ethernet">
+         <figcaption>câble Ethernet</figcaption>
+       </figure>
+       <figure class="centre">
+         <img src="optique.jpg" width="90" height="90"  alt="fibre optique" title="fibre optique">
+         <figcaption>fibre optique</figcaption>
+      </figure>
+      <figure class="centre">
+         <img src="ondes.jpg" width="90" height="90" alt="ondes" title="ondes">
+         <figcaption>ondes</figcaption>
+      </figure>
+        
+      
+      <p>Aujourd'hui, les moyens de télécommunication sont divers : téléphone, radio, télévision, internet. Certains sont à sens unique (ou quasiment : radio, TV) : on parle de broadcast ou diffusion, d'autres sont à l'inverse en mode collecte (réseaux "ad hoc", un système central récupère des informations venant de divers terminaux). Entre ces deux extrêmes, comme Internet, les échanges d'informations peuvent aller dans les deux sens, par commutation et routage. 
+    </p>
+    <p>
+      Les grandes étapes du transport d'une information sont : la capture de cette information (fichier informatique, micro), le codage de cette information ("codage source", en binaire : suite de 0 et de 1), les codages canaux, le décodage canal, le décodage source et enfin la restitution au destinataire. 
+      <i>L'étude des encodages Ascii et Unicode est au <a href="http://cache.media.education.gouv.fr/file/CSP/41/2/1e_Numerique_et_sciences_informatiques_Specialite_Voie_G_1025412.pdf" target="_blank" title="B.O. NSI">programme de la spécialité NSI</a>.</i>
+      </p>
+      <h3> Quelques dates </h3>
+        <ul>
+          <li> 1464 : création de la Poste royale par Louis XI</li>
+          <li> <span class="particulier">vers 1792</span> : invention du télégraphe optique par le Français Chappe : <a href="https://www.youtube.com/watch?v=F3sY6_fOx2I" title="M.Bidouille" target="_blank">explications de M.Bidouille</a></li>
+          <li> 1832 : invention du Morse</li>
+          <li> 1858 : premier câble transatlantique</li>
+          <li> <span class="particulier">1876</span> : invention du téléphone par Bell/Gray/Meucci/Reis</li>
+          <li> 1901 : première transmission radio transatlantique par Marconi</li>
+          <li> 1904 : apparition du mot "télécommunications" (par Estaunié)</li>
+          <li> vers 1945 : premiers ordinateurs (électroniques)</li>
+          <li> novembre 1969 : 4 n&oelig;uds de liaisons entre les universités américaines d'UCLA, de Stanford, de Berckley et de Salt Lake City. C'est le système "Arpanet".</li>
+          <li> 1971 : réseau Cyclades en France</li>
+          <li> <span class="particulier">1983</span> : Internet</li>
+        </ul>
+      <figure> <img src="security.png" weidth="60" height="60" alt="sécurité" title="sécurité"> </figure>
+      <h3> Enjeux de sécurité</h3>
+      <p> La sécurité dans les réseaux porte sur : </p>
+        <ul>
+          <li> la confidentialité : les messages doivent rester secrets et les sources éventuellement non géolocalisables,</li>
+          <li> l'intégrité : un message ne doit pas être modifié à l'insu de l'expéditeur,</li>
+          <li> l'authentification : la source et le destinataire doivent être sûrs de leur interlocuteur,</li>
+          <li> la disponibilité : empêcher un site d'être volontairement bloqué,</li>
+          <li> le contrôle d'accès : protection contre un usage non autorisé des données,</li>
+          <li> la non répudiation</li>
+        </ul>
+      <p> Quelques conseils : </p>
+        <ul>
+          <li> en cas de problème bancaire : n° 0892 705 705</li>
+          <li> éviter le WiFi public</li>
+          <li> effectuer des sauvegardes régulières de ses données (hors Cloud)</li>
+          <li> tester (ou pas...) si son adresse mail a déjà été piratée, via le site : <a href="https://haveibeenpwned.com/" title="hibp" target="_blank">hibp</a></li>
+          <li> consulter le site <a href="https://www.arnaques-infos.org/" title="anti-arnaques" target="_blank">arnaques-info</a></li>
+          <li> consulter les conseils d'assistance et de prévention du risque numérique par <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/" title="site gouvernemental" target="_blank">cybermalveillance</a></li>
+        </ul>  
+      <h2> Couches </h2>
+      <p> Selon le modèle OSI (Open Systems Interconnection) de l'ISO, il y a 7 couches à considérer :</p>
+                <ol start="7" reversed> <!-- j'ai créé une liste non ordonnée car sinon elle commençait, en haut, par 1 -->
+                        <li> Application (Http,...) </li>
+                        <li> Présentation (Html, Ascii,...) </li>
+                        <li> Session </li>
+                        <li> Transport (TCP, UDP,...) <i>dont le PDU<sup>1</sup> est le message (segment pour TCP, datagramme pour UDP)</i></li>
+                        <li> Réseau (IP,...) <i>dont le PDU est le paquet qui encapsule le message</i></li>
+                        <li> Liaison (Ethernet, Wifi,...) <i>dont le PDU est la trame qui encapsule le paquet</i></li>
+                        <li> Physique (ADSL, Bluetooth, satellite,...) <i>dont le PDU est le bit</i></li>
+                </ol>
+      <i><sup>1</sup> : Protocol Data Unit est l'unité de mesure de l'information.</i>
+      <p>
+        On peut retenir l'ordre de ces 7 couches par ce moyen mnémotechnique : "All People Seem To Need Data Process". Chaque couche fournit des services à la couche suivante.
+        Mais pour Internet, ce modèle ne s'est pas imposé : <a href="https://www.frameip.com/osi/#4-8211-critique-du-modele-osi" target="_blank" title="Modèle ISO">critiques</a>.
+        Le modèle qui s'est imposé est plutôt le <a href="https://www.frameip.com/tcpip/" target="_blank" title="TCP/IP">modèle TCP/IP en 4 couches</a>:
+        <br> <ol start="4" reversed>
+                <li> Application (process) </li>
+                <li> Transport (host to host) </li>
+                <li> Inter-réseau (Internet) </li>
+                <li> Accès au réseau (Network access)</li>
+             </ol> 
+      </p>
+       <h2> Couche physique </h2>
+        <p>L'accès au réseau peut se faire en filaire (câble coaxial, paire de cuivre torsadée, fibre optique) ou par radio (ondes électromagnétiques) : WiFi, WiMax, 4G, satellite.</p>
+        <p>Les performances de transmission (rapidité, fiabilité) sont variables, notamment à cause de la technologie et du support physique employé (câble coaxial en cuivre, paire torsadée-RJ45, ADSL, fibre optique, WiFi, satellite...).</p>
+    
+        <h3> cas du réseau 4G </h3>
+          <p> La technologie utilisée est le LTE (long term evolution). Le terminal (téléphone, smartphone ou clé 4G) s'appelle "User Equipment". Il contient une carte SIM (Subscriber Identity Module) ou USIM contenant l'identité d'abonnement, unique au monde (n° IMSI).
+            En France, ce numéro commence par 208 puis 01 si l'opérateur est Orange par exemple. Le terminal communique avec une station de base appelée eNodeB (evolved node base station) dont l'élément emblématique est l'antenne (environ 10 000 en France).
+            Celle-ci est un dispositif rayonnant qui transforme une onde électromagnétique en courant alternatif ou réciproquement. Une station de base couvre une surface appelée cellule. La capacité d'une cellule en Mbit/s ne dépend pas de la taille de la cellule.
+            En zone urbaine, ces cellules seront plus petites qu'en zone rurale.
+            Ces eNodeB diffusent régulièrement un signal appelé Voie balise ou beacon channel (ce qui indique l'existence du réseau notamment). Ces eNodeB sont ensuite reliées au réseau IP de l'opérateur, lui-même relié à des routeurs vers Internet.
+          Plus précisément, le réseau Internet ne sait pas gérer la mobilité, a priori. En 4G, la solution retenue est de faire converger les paquets vers une porte d'entrée, un PGW : Packet Gate Way. Comme l'utilisateur peut changer de cellule, les données passent par un équipement intermédiaire : le SGW (Serving Gate Way).</p>
+          <figure classe="centre">
+            <img src="architecture%204G.png" width="100%" height="100%" alt="architecture 4G" title="réseau 4G">
+            </figure>
+          <p> Deux éléments sont centraux dans l'architecture d'un réseau 4G : le MME et le HSS. Ce dernier (Home Subscriber Server) est une base de données des abonnés. Lorsqu'un terminal se connecte à une eNodeB, celle-ci envoie une requête auprès du MME (Mobility Management Entity) pour l'autoriser à utiliser le réseau.
+            Ce MME va alors consulter le HSS pour s'assurer de la présence de l'abonné dans ce HSS (un identifiant temporaire, le TMSI, est également attribué, pour une question de sécurité). Le MME assure également d'autres services de contrôle. Une adresse IP (cf paragraphe ci-dessous) est allouée lors de la mise sous tension du terminal (on parle d'"attachement"), via le chemin suivant : le MME envoie une requête au SGW qui transmet au PGW. Ce dernier retourne une adresse IP transmise successivement au SGW, puis au MME, au eNodeB et à l'UE.</p>
+        <h3> cas du réseau Ethernet </h3>
+          <p> C'est un réseau local (LAN) supporté par des paires torsadées ou par la fibre optique.</p>
+    <h2> Couche réseau, adresse IP </h2>
+      <p>
+        L'adressage est le fait d'ajouter une adresse à une information. C'est le moyen pour identifier un équipement (ordinateur, smartphone). 
+        L'adressage peut être hiérarchique ou géographique (adresse postale, téléphonie fixe) ou à plat (adresse MAC : Medium Access Control).
+        L'adressage IP est quant à lui sous deux versions : IPv4 et IPv6.</p>
+        <h3> adresse IPv4</h3>
+          <p> Une adresse IPv4 est codée sur 4 octets (32 bits), séparés par un point. Dans cette adresse, chaque octet est écrit en décimal donc entre 0 et 255. 
+            Exemple d'adresse IPv4 : 35.186.248.227
+            En théorie, il y a 2<sup>32</sup> adresses possibles, soit un peu plus de 4 milliards, ce qui est <a href="https://fr.wikipedia.org/wiki/Adresse_IP#%C3%89puisement_des_adresses_IPv4" title="épuisement IPv4" target="_blank">insuffisant depuis 2011</a>. D'autant que de nombreuses adresses ne sont jamais utilisées. Vu la croissance exponentielle d'Internet, une autre version est apparue : IPv6. Une autre solution pour contourner ce problème de manque d'adresse est l'adressage dynamique. Celui-ci consiste à attribuer des adresses IP temporaires ce qui permet d'allouer la même adresse à deux clients à deux moments différents (quand le premier n'est plus connecté). A l'inverse, d'autres adresses sont fixes. </p>
+        <h3> adresse IPv6</h3>
+          <p> Chaque adresse IPv6 est codée sur 16 octets (128 bits), regroupés 2 par 2 et séparés par le symbole :, ce qui permet plus de 3x10<sup>38</sup> combinaisons, de quoi largement couvrir les besoins futurs.
+            Exemple d'adresse IPv6 : 2001:41d0:1:1b00:213:186:33:2 </p>
+    <p>
+      IP signifie Internet Protocol. C'est le protocole permettant d'envoyer des informations. Mais il n'est pas fiable à lui seul : des paquets peuvent être perdus, arrivés en double, arrivés dans le désordre. La fiabilité sera assurée par le protocole TCP (cf paragraphe suivant).
+  </p>
+    <h2> Couche transport, protocole TCP </h2>
+    <h2> Routage </h2>
+  
+    <p>
+       La commutation et le routage sont deux actions permettant de faire voyager une information dans un réseau. 
+      Conformément au programme de SNT, nous nous limiterons ici au routage. Ce dernier est le fait de déplacer un paquet d'une interface à une autre.
+      Cela se fait en mode <a href="https://waytolearnx.com/2018/07/difference-entre-mode-connecte-et-non-connecte.html" title="différences connecté ou non" target="_blank">non connecté</a>. 
+      Les paquets pourront suivre des chemins différents. Ils rencontreront des routeurs : ceux-ci extraient le paquet contenu dans la trame, le commutent et l'encapsulent dans une nouvelle trame pour poursuivre son chemin.
+      Les routeurs contiennent une table de routage (en quelque sorte, une carte routière locale du réseau) qui va indiquer la suite du chemin que la trame doit prendre.
+    </p>
+    <p>
+      On peut suivre le chemin parcouru (le nombre de routeurs rencontrés, leur adresse et le temps nécessaire) par un paquet IP grâce au programme <a href="https://fr.wikipedia.org/wiki/Traceroute" title="Wikipedia traceroute" target="_blank">Traceroute</a>.
+      Voici un exemple, avec également, en dessous, la commande ping qui permet, elle, d'obtenir notamment l'adresse IP du serveur d'un site web :  
+  </p>
+    <p class="centre"><img src="routageSRFC.PNG" width="50%" height="50%" alt="exemple traceroute et ping"></p>
+
+  
+  
+    <h2> Réseaux pair-à-pair </h2>
+      <p> Il existe deux modèles principaux de communication entre ordinateurs : </p>
+      <ul>
+        <li> en mode "client-serveur": un ordinateur est le client et demande un service à un autre appelé serveur,</li>
+        <li> en mode "Pair-à-pair". Les ordinateurs sont tour à tour clients et serveurs et sont appelés noeuds.</li>
+      </ul>
+      <p>
+        Pour cela, chaque ordinateur doit posséder un logiciel (par exemple avec les protocoles emule ou BitTorrent) qui lui permet notamment de savoir qui possède tel ou tel fichier et de contrôler le transfert des données. La rapidité de téléchargement augmente avec le nombre d'internautes concernés.
+      </p>
+      <p>
+        C'est ce mode qui est la plus grande source de téléchargements. Les couts de mise en service sont bien inférieurs à un véritable serveur, avec une simplicité d'utilisation.'
+      </p>
+      <p> Autres avantages : </p>
+      <ul>
+        <li>Répartition de la charge : contrairement aux réseaux client/serveur où le serveur principal est chargé de gérer l'ensemble des activités du réseau avec un risque de saturation, dans un réseau pair-à-pair ce sont tous les pairs qui contribuent à la gestion des requêtes et des ressources.</li>
+        <li>Disponibilité accrue des ressources : comme les réseaux pair-à-pair sont extensibles, et que les pairs sont fournisseurs de ressources au sein du réseau, plus le nombre de pairs augmente, plus la disponibilité des ressources présentes augmente.</li>
+        <li>Capacité de stockage décuplée : contrairement au fonctionnement d'un réseau à serveur central où toutes les données sont stockées au niveau de ce serveur, dans un réseau pair-à-pair chaque pair offre un petit espace de stockage. La capacité de stockage est décuplée grâce à la contribution de tous les pairs.</li>
+        <li>Diversité des chemins sur le réseau : dans un réseau pair-à-pair, plusieurs chemins sont possibles entre chaque couple de pair.</li>
+        <li>Résistance aux pannes : dans un réseau pair-à-pair, les ressources sont réparties sur l'ensemble des pairs connectés, la panne d'un pair ne peut donc pas altérer le fonctionnement du réseau</li>
+      </ul>
+      <p> </p> <!-- pour créer une ligne d'espace. Il y a peut-être un autre moyen plus académique. -->
+      <p>
+         Connaissez-vous des usages légaux ?
+      </p>
+      <ul>
+        <li>photos de famille, vidéos amateurs,</li>
+        <li>calculs distribués (projets Décrypthon et Climate prediction.net, Folding@home, <a href="https://boinc.berkeley.edu/" target="_blank" title="Compute For Science">projet Compute For Science</a> </li>
+        <li>blockchain (technologie pour monnaies virtuelles comme le Bitcoin,</li>
+        <li>jeux en réseau,</li>
+        <li>Skype (basé en partie sur du Peer-to-Peer),</li>
+        <li>réseau social/plateforme collaborative comme RedMatrix,</li>
+        <li><a href="https://www.youtube.com/watch?v=iAf1xKhIim4" target="_bla,k" title="Mute">Mute, éditeur collaboratif</a> (vidéo de 1'),</li>
+      </ul>
+    <p> </p>
+      <h3>Usages illégaux</h3>
+      <p>Téléchargement d'oeuvres protégées par le droit d'auteur (film, musique, jeux vidéos)</p>
+      <p>
+        <a href="https://www.service-public.fr/particuliers/vosdroits/F32108" target="_blank" title="juridique">service public.fr</a></p>
+      <p>Autres risques:</p>
+      <ul>
+        <li>instabilité : la gestion d'un réseau pair-à-pair étant dynamtique, les pairs peuvent disparaître à tout moment, par conséquent les ressources aussi.</li>
+        </ul>
+      <p>
+        L'inconvénient principal des réseaux pair-à-pair reste le comportement illicite de certains des utilisateurs.</p>
+      <ul>
+        <li>sécurité : de nombreux virus circulent sur les réseaux pair-à-pair et rendent ces réseaux vulnérables.</li>
+        <li>freeloading : certains profitent des ressources partagées sans pour autant partager les leurs. Un réseau pair-à-pair ne peut fonctionner convenablement que si chacun y participe activement,</li>
+        <li>état des données : les ressources circulent librement et sans contrôle ni vérification. Certaines ressources peuvent être défectueuses.</li>
+        <li>spoofing : des entreprises ajoutent des copies erronées de fichiers pour inciter les utilisateurs à revenir au téléchargement légat et payant.</li>
+        <li>vie privée : certains réseaux pair-à-pair (centralisés) peuvent récupérer les adresses IP des utilisateurs, la vie privée des utilisateurs n'est alors plus protégée.</li>
+        <li>régulation : certains réseaux pair-à-pair garantissent l'anonymat des utilisateurs, il est donc plus difficile aux autorités d'appliquer les lois.</li>
+        <li>propagande : les réseaux pair-à-pair sont souvent envahis par des publicités.</li>
+      </ul>
+      <p> Site très intéressant sur les réseaux: <a href="http://www.gatoux.com/" target="_blank" title="site de JL Gâtoux">www.gatoux.com</a> </p>
+        <p> Un livre référence : "Réseaux" d'Andrew Tanenbaum </p>
+
+            <h2 class="centre"> <a href="2-Web.html" title="thème 2" >Le Web </a></h2>  
+            <h2 class="centre"> <a href="index.html" title="les 7 thèmes" >retour au menu </a></h2>
+        <footer>
+            <h3 class="centre"> <a href="mailto:sylvain.rouyer@ac-rennes.fr" title="me contacter" >contact</a></h3>
+        </footer>
+    </body>
+</html>
