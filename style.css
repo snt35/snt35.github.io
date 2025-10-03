@@ -1,0 +1,88 @@
+body
+{
+	background-color: #404040;
+	color: white;
+}
+h1
+{
+	width: 50%; /* cela permet de réduire la largeur du texte
+	mais il est du coup situé à gauche*/
+	margin: auto; /* avec la ligne précédente, cela permet de
+	centrer le bloc */
+	text-align: center;
+	/* la ligne suivante permet d'encadrer un titre */
+	border: 2px white solid;
+	border-radius: 10px;
+  color: white; /* proposé par défaut par glitch */
+
+}
+h3
+{
+  margin: 20px;
+}
+/* l'instruction suivante sert à modifier l'apparence d'un élément déjà visité*/
+a
+{
+	color: gray;
+}
+a:visited
+{
+  color: white;
+}
+/* tous les éléments qui ont l'attribut class="centre" ou class="droite", etc. */
+.centre
+{
+	text-align: center;
+}
+.droite
+{
+  text-align: right;
+}
+.exemple
+{
+  font-style: italic;
+}
+.partie
+{
+  color: green;
+}
+.particulier
+{
+	color: yellow;
+}
+.souligne
+{
+	text-decoration: underline; color:red;
+	}
+figure /* pour que les images(figures) soient sur la même ligne (mais pourquoi inline ne suffit pas ?) */
+{
+  display: inline-block;
+}
+
+td /* toutes les cellules des tableaux */
+{
+	border:1px solid white; /* cela permet de créer des bordures aux cellules du tableau */
+
+}
+th /* l'en-tête d'un tableau */
+{
+	border: 1px solid white; /* cela permet de créer des bordures aux cellules de l'en-tête du tableau */
+}
+table
+{
+	border-collapse: collapse; /* cela a permis de coller les bordures des cellules les unes aux autres */
+	margin:auto; /* cela a permis de centrer le tableau sur la page */
+}
+
+/* l'élément qui a un attribut id="encadrement" */
+#encadrement{
+  border: 2px solid red;
+  padding: 3px;
+}
+
+/* cette instruction permet de plier/déplier du texte (cf page 2-Web.html et script.js) */
+#suite
+{
+    margin:0;
+    display:none;
+}
