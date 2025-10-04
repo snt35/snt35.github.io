@@ -27,33 +27,36 @@
     <h2>Présentation détaillée</h2>
      <ol>
         <li> Titre de la page</li>
-        <p>C'est le nom qui apparaît dans l'onglet de la page (en haut)</p>
+        <p>C'est le nom qui apparaît dans l'onglet de la page (en haut) grâce aux balises &lt;title&gt; (ouvrante) et &lt;/title&gt; (fermante)</p>
         <li> Titre (principal) de niveau 1 </li>
-       <p>Pour structurer une page de manière hiérarchique, on peut créer des niveaux de titre : du plus important (h1) au moins important (h6).</p>
+       <p>Pour structurer une page de manière hiérarchique, on peut créer des niveaux de titre : du plus important (&lt;h1&gt;) au moins important (&lt;h6&gt;).</p>
         <li> Paragraphe</li>
-       <p>Pour écrire un paragraphe (ou simplement une phrase), on utilisera ces balises.</p>
+       <p>Pour écrire un paragraphe (ou simplement une phrase), on utilisera ces balises &lt;p&gt;.</p>
         <li> Liste à puces non ordonnée</li>
-        <p>Si l'on fait une liste sans numéro ses éléments, on utilisera ces balises au début et à la fin de la liste.</p>
+        <p>Si l'on fait une liste sans numéro ses éléments, on utilisera ces balises &lt;ul&gt; au début et à la fin de la liste ("ul" est l'abréviation de "unordered list": liste non ordonnée).</p>
          
          <li> Liste à puces ordonnée</li>
-         <p>Si l'on fait une liste avec numérotation des éléments (en commençant à 1), on utilisera ces balises au début et à la fin de la liste.</p>
+         <p>Si l'on fait une liste avec numérotation des éléments (en commençant à 1), on utilisera ces balises &lt;ol&gt; au début et à la fin de la liste.</p>
         <li> Contenu d'une puce</li>
-         <p>Une liste est constituée de "puces". Chaque début (et fin) de puce doit être repérée par ces balises.</p>
+         <p>Une liste est constituée de "puces". Chaque début (et fin) de puce doit être repérée par ces balises &lt;li&gt; .</p>
         <li> Titre de niveau secondaire</li>
-         <p>Un titre de niveau secondaire correspond à un sous-titre. Il y en a donc en général plusieurs qu'on repère avec ces balises.
-             On peut aussi créer une sous-partie d'un sous-titre avec la balise h3 et ainsi de suite jusqu'au niveau h6 (rarement atteint).</p>
+         <p>Un titre de niveau secondaire correspond à un sous-titre. Il y en a donc en général plusieurs qu'on repère avec ces balises &lt;h2&gt; .
+             On peut aussi créer une sous-partie d'un sous-titre avec la balise &lt;h3&gt; et ainsi de suite jusqu'au niveau &lt;h6&gt; (rarement atteint).</p>
         <li> Balises pour créer un hypertexte</li>
-         <p>C'est la plus célèbre des balises puisque c'est elle qui permet la création d'un lien hypertexte. 
-             Sans elle, pas de web. Son nom est l'initial du mot "anchor" qui signifie ancre. 
-             Pour qu'elle fonctionne, il faut lui ajouter un attribut : href qui donne l'adresse visée.</p>
+         <p>La balise &lt;a&gt; est la plus célèbre des balises puisque c'est elle qui permet la création d'un lien hypertexte. 
+             Sans elle, pas de web. Son nom est l'initiale du mot "anchor" qui signifie ancre. 
+             Pour qu'elle fonctionne, il faut lui ajouter un attribut : href qui donne l'adresse visée. On écrira donc par exemple &lt;a href="https..."&gt;</p>
         <li> Balise pour insérer une image</li>
          <p> Une page Web ne contenant que du texte serait sans doute peu agréable à lire (sauf si c'est une oeuvre littéraire ou un texte très intéressant).
              Alors, en général, on insère une image (ou une vidéo, un son...). 
-             Cette balise img a la particularité d'être "orpheline", c'est-à-dire que contrairement à toutes les précédentes balises, elle ne fonctionne pas en "binôme" mais seule.
+             Cette balise &lt;img&gt; a la particularité d'être "orpheline", c'est-à-dire que contrairement à toutes les précédentes balises, elle ne fonctionne pas en "binôme" mais seule.
              Elle doit aussi contenir un attribut : "src" qui servira à indiquer la localisation de l'image (où est-elle stockée sur le web ?).
              Enfin, on doit aussi indiquer sa largeur et sa hauteur et un texte alternatif au cas où l'image ne se chargerait pas et qui permettra aussi de la décrire pour les non-voyants.</p>
         <li> Balises pour écrire un commentaire</li>
-      </ol>  
+         <p>Il peut être intéressant d'écrire des commentaires dans son code qui ne sera pas vu par les internautes : travail à plusieurs ou sur plusieurs jours ou explication sur un choix de balise ou une amélioration à apporter, les raisons ne manquent pas.
+         Le commentaire devra commencer par &lt;!-- et se finir par --&gt;.
+         </p>
+     </ol>  
       
       <h2 class="centre"> <a href="index.html" title="les 7 thèmes">retour au menu </a></h2>
         <footer>    <h3 class="centre"> <a href="mailto:sylvain.rouyer@ac-rennes.fr" title="me contacter">contact</a></h3>
