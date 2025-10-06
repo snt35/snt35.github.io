@@ -5,15 +5,13 @@ body
 }
 h1
 {
-	width: 50%; /* cela permet de réduire la largeur du texte
-	mais il est du coup situé à gauche*/
-	margin: auto; /* avec la ligne précédente, cela permet de
-	centrer le bloc */
+	width: 50%; /* cela permet de réduire la largeur du texte 	mais il est alors situé à gauche*/
+	margin: auto; /* avec la ligne précédente, cela permet de centrer le bloc */
 	text-align: center;
 	/* la ligne suivante permet d'encadrer un titre */
 	border: 2px white solid;
 	border-radius: 10px;
-  color: white; /* proposé par défaut par glitch */
+  color:#ff1a1a;
 
 }
 h3
@@ -78,11 +76,4 @@ table
 #encadrement{
   border: 2px solid red;
   padding: 3px;
-}
-
-/* cette instruction permet de plier/déplier du texte (cf page 2-Web.html et script.js) */
-#suite
-{
-    margin:0;
-    display:none;
 }
