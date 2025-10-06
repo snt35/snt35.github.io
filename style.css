@@ -3,6 +3,7 @@ body
 	background-color: #404040;
 	color: white;
 }
+/* pour choisir une couleur, on peut aller sur https://www.w3schools.com/colors/colors_picker.asp */
 h1
 {
 	width: 50%; /* cela permet de réduire la largeur du texte 	mais il est alors situé à gauche*/
