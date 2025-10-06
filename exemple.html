@@ -34,14 +34,13 @@
        <p>Pour écrire un paragraphe (ou simplement une phrase), on utilisera ces balises &lt;p&gt; et &lt;/p&gt;.</p>
         <li> Liste à puces non ordonnée</li>
         <p>Si on fait une liste sans numéroter ses éléments, on utilisera ces balises &lt;ul&gt; au début et &lt;/ul&gt; à la fin de la liste. "ul" est l'abréviation de "unordered list": liste non ordonnée.
-        Par défaut, chaque élément de cette liste commencera par une puce en forme de cercle. On peut modifier cette puce:
-            <ul>
-                <li> si on veut plutôt un disque, il suffit d'ajouter l'attribut "type=disc" dans la balise ouvrante, ce qui s'écrit &lt;u type=discl&gt; </li>
-                <li> si on veut plutôt un carré, il suffit d'ajouter l'attribut "type=square" dans la balise ouvrante, ce qui s'écrit &lt;u type=squarel&gt; </li>
-            </ul>
         </p>
         <li> Liste à puces ordonnée</li>
-         <p>Si on fait une liste avec numérotation des éléments (en commençant à 1), on utilisera ces balises &lt;ol&gt; au début et &lt;ol&gt; à la fin de la liste.</p>
+         <p>Si on fait une liste avec numérotation des éléments (en commençant à 1), on utilisera ces balises &lt;ol&gt; au début et &lt;ol&gt; à la fin de la liste.
+         Si on veut plutôt commencer par ordre décroissant, on utilisera l'attribut "type=reversed" dans la balise ouvrante. Autrement dit, on écrit : &lt;ol type=reversed &gt; .
+             On peut aussi vouloir commencer à un autre nombre que 1. Dans ce cas, par exemple, on utilise l'attribut start="4" pour commencer à 4.
+         
+         </p>
         <li> Contenu d'une puce</li>
          <p>Une liste est constituée de "puces". Chaque début (et fin) de puce doit être repérée par ces balises &lt;li&gt; .</p>
         <li> Titre de niveau secondaire</li>
